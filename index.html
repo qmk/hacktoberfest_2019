@@ -5,8 +5,8 @@
   <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>QMK is participating in Hacktoberfest!</title>
-    <meta name="description" content="We're giving away t-shirts to people active in the QMK community">
+    <title>Hacktoberfest with QMK!</title>
+    <meta name="description" content="We're giving away goodies to people active in the QMK community - check out the requirements!">
     <meta name="author" content="Jack Humbert">
 
   <!-- Mobile Specific Metas
@@ -31,8 +31,8 @@
     <meta name="twitter:site" content="@qmk_firmware">
     <meta name="twitter:creator" content="@jackhumbert">
     <meta property="og:url" content="https://hacktoberfest.qmk.fm/">
-    <meta property="og:title" content="QMK is participating in Hacktoberfest!">
-    <meta property="og:description" content="We're giving away t-shirts to people active in the QMK community">
+    <meta property="og:title" content="Hacktoberfest with QMK!">
+    <meta property="og:description" content="We're giving away goodies to people active in the QMK community - check out the requirements!">
     <meta property="og:image" content="https://hacktoberfest.qmk.fm/img/social.jpg">
 
     <style>
@@ -45,10 +45,10 @@
         background: #152347;
         color: #99a1b3;
         font-family: Space Mono, monospace;
-        background-image: url("img/bg-left.png"),url("img/bg-right.png"),linear-gradient(to bottom right, #152347, #341E54);
+        background-image: url("img/bg-left.png"),url("img/bg-right.png"),#152347;
         background-position: top left,bottom right;
         background-repeat: no-repeat;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-feature-settings: 'liga' 0;
       }
 
@@ -99,6 +99,87 @@
         background: #a11ec6;
       }
 
+
+      input[type="text"] {
+        font-size: 20px;
+        line-height: 30px;
+        background-color: #39486E;
+        border: none;
+        width: 496px;
+        height: 60px;
+        display: inline;
+        padding-left: 20px;
+        color: #fff;
+        border-radius: 0px;
+      }
+
+      #username-button {
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        display: inline;
+        height: 60px;
+        width: 160px;
+        background-color: #A11EC6;
+        font-weight: bold;
+      }
+
+      #username-box {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      #eligibility {
+        width: 100%;
+        margin: 24px auto;
+        line-height: 120%;
+
+        position: relative;
+        box-sizing: border-box;
+        color: white;
+        background: linear-gradient(to right,#fe7f5d,#ff4284);
+      }
+
+      #eligibility a {
+        color: #fff922;
+      }
+
+      .total {
+        padding: 15px 20px;
+      }
+
+      #eligibility.completed .total {
+        background: #fff922;
+        color: #152347;
+        font-weight: bold;
+      }
+
+      .count {
+        float: right;
+      }
+
+      .types {
+        padding: 10px 0px;
+        background: rgba(0, 0, 0, .2);
+      }
+
+      .type {
+        padding: 5px 20px;
+      }
+
+      .list {
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+
+
       small {
         font-size: 50%;
       }
@@ -108,6 +189,13 @@
         text-align: center;
         margin-bottom: 50px;
         color: white;
+      }
+
+      code {
+        background: #fff922;
+        color: #152347;
+        border-radius: 0px;
+        border: 0px;
       }
 
 
@@ -155,22 +243,64 @@
         </div>
       </div>
 
-      <h1>QMK is Partici&shy;pating in Hacktober&shy;fest<sup><small>®</small></sup>!</h1>
+      <h1>Hacktober&shy;fest<sup><small>®</small></sup> with QMK!</h1>
 
-      <p>In addition to participating in Hacktoberfest, QMK is also celebrating its <em>4 year</em> anniversary<sup><a href="https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858">[1]</a></sup> this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets any of these requirements during the month of October:</p>
+      <p>In addition to participating in <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>, QMK is also celebrating its <em>4 year</em> anniversary<sup><a href="https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858">[1]</a></sup> this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets these requirements during the month of October.</p>
 
 
-    <h2>These haven't been finalised yet.</h2>
-      <strike>
+      <h2>How to qualify for a QMK t-shirt:</h2>
       <ul>
-        <li>Make 4 <a href="#code-reviews">code reviews</a> on a pull request in any QMK repo</li>
-        <li>Donate $15 to <a href="https://ckeys.org/donate/">cKeys</a>, a 501(c)(3) non-profit that aims to connect and educate people interested in keyboards and technology</li>
+        <li><a href="https://ckeys.org/donate/">Donate $15 to cKeys</a>, a 501(c)(3) non-profit that aims to connect and educate people interested in keyboards and technology</li>
+        <li><em>or</em> Interact with 4 <a href="https://github.com/qmk">QMK repos</a> in any of these ways:</li>
+        <ul>
+          <li>Comment on an <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues">issue or PR in a significant way that's labelled <code>hacktoberfest</code></a></li>
+          <li>Review/suggest significant changes on a <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues">PR that's labelled <code>hacktoberfest</code></a></li>
+          <li>Open a PR that documents any new feature that's consistent with our doc style</li>
+          <li>Open a PR that translates part of the documentation or website</li>
+        </ul>
+        </li>
       </ul>
-    </strike>
 
-      <p class="center"><a href="/" class="primary button center big">Claim your &shy;QMK reward</a></p>
+      <h3>Check to see if you've met the requirements:</h3>
+      <div class="row">
+        <div class="columns six">
+          <p id="username-box">
+            <input id="username" type="text" placeholder="Github Username" /><button class="button primary" id="username-button" onclick="check();">Check</button>
+          </p>
+        </div>
+        <div class="columns six">
+          <div id="eligibility">
+            <div class="total">Interaction Total <div class="count" id="interaction-total"></div></div>
+            <div class="types">
+              <div class="type" id="comments">Significant Comments
+                <div class="count" id="comment-count"></div>
+                <div class="list" id="comment-list"></div>
+              </div>
+              <div class="type" id="reviews">Reviews/Suggestions
+                <div class="count" id="review-count"></div>
+                <div class="list" id="review-list"></div>
+              </div>
+              <div class="type" id="documentations">Documentation PRs
+                <div class="count" id="documentation-count"></div>
+                <div class="list" id="documentation-list"></div>
+              </div>
+              <div class="type" id="translations">Translation PRs
+                <div class="count" id="translation-count"></div>
+                <div class="list" id="translation-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="center">Once you have donated or completed the requirements, click the link below to fill out the form! We'll be validating all of the entries at the end of the month.</p>
+      <p class="center"><a href="/" class="primary button center big">Claim your QMK t-shirt</a></p>
 
       <p>Be sure to check out all <a href="https://hacktoberfest.digitalocean.com/">the details on Hacktoberfest</a>, how you can find an event near you, and claim your reward offered by DigitalOcean and DEV.</p> 
+
+      <h4>This QMK event is graciously sponsored by the following vendors:</h4>
+
+      <p>Interested in sponsoring a dollar amount per shirt claimed? Reach out to us!</p>
 
       <h3>F.A.Q.</h3>
 
@@ -183,10 +313,143 @@
       <h4 id="who"><span>Who can participate?</span></h4>
       <p>Anyone with a <a href="https://github.com/">Github</a> account! </p>
 
-      <footer>Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK.</footer>
+      <footer>Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK and the vendors listed above.</footer>
 
     </div>
     <script>
+
+var headers = new Headers();
+// no-permission key
+headers.append('Authorization', 'Basic ' + window.btoa("jackhumbert:224be223d00ffb21467f0691c4f7ea8d74b1a9a7"));
+// get draft PRs as well
+headers.append('Accept', 'application/vnd.github.shadow-cat-preview+json');
+
+function init() {
+  comments = [];
+  reviews = [];
+  documentations = [];
+  translations = [];
+  document.getElementById("eligibility").classList.remove("completed");
+  document.getElementById("interaction-total").innerHTML = `<img src="img/loading.svg" />`;
+  document.getElementById("comment-count").innerHTML = `<img src="img/loading.svg" />`;
+  document.getElementById("review-count").innerHTML = `<img src="img/loading.svg" />`;
+  document.getElementById("documentation-count").innerHTML = `<img src="img/loading.svg" />`;
+  document.getElementById("translation-count").innerHTML = `<img src="img/loading.svg" />`;
+}
+
+function checkComments(issues, username) {
+  return Promise.all(issues.map(issue => fetch(issue.comments_url, {headers: headers}))).then(responses =>
+        Promise.all(responses.map(res => res.json()))
+  ).then(issues => {
+    issues.forEach(issue => {
+      var comment = issue.find(comment => { return (username.toLowerCase() == comment.user.login.toLowerCase()); });
+      if (comment) {
+        comments.push(comment);
+      }
+    });
+    document.getElementById("comment-count").innerHTML = comments.length;
+    console.log("comments: " + comments.length);
+    console.log(comments);
+    return { "comments": comments };
+  });
+}
+
+function checkReviews(issues, username) {
+  return Promise.all(issues.map(issue => issue.review_comments_url ? fetch(issue.review_comments_url, {headers: headers}) : '')).then(responses =>
+        Promise.all(responses.map(res => res ? res.json() : ''))
+  ).then(issues => {
+    issues.forEach(issue => {
+      var review = (issue && issue.find(review => { return (username.toLowerCase() == review.user.login.toLowerCase()); }));
+      if (review) {
+        reviews.push(review);
+      }
+    });
+    document.getElementById("review-count").innerHTML = reviews.length;
+    console.log("reviews: " + reviews.length);
+    console.log(reviews);
+    return { "reviews":  reviews };
+  })
+}
+
+function checkDocumentations(issues, username) {
+  return new Promise(function(resolve, reject) {
+    issues.forEach(issue => {
+      if (username.toLowerCase() == issue.user.login.toLowerCase() && issue.labels.find(label => label.name == "documentation"))
+        documentations.push(issue);
+    });
+    resolve();
+  }).then(issue => {
+    document.getElementById("documentation-count").innerHTML = documentations.length;
+    console.log("documentations: " + documentations.length);
+    console.log(documentations);
+    return { "documentations": documentations };
+  });
+}
+
+function checkTranslations(issues, username) {
+  return new Promise(function(resolve, reject) {
+    issues.forEach(issue => {
+      if (username.toLowerCase() == issue.user.login.toLowerCase() && issue.labels.find(label => label.name == "translation"))
+        translations.push(issue);
+    });
+    resolve();
+  }).then(issue => {  
+    document.getElementById("translation-count").innerHTML = translations.length;
+    console.log("translations: " + translations.length);
+    console.log(translations);
+    return { "translations": translations };
+  });
+}
+
+const arraysToObject = (arr, keyField) => Object.assign({}, ...arr.map(item => (item)))
+
+function check() {
+
+  init();
+  var username = document.getElementById("username").value;
+  var label = "hacktoberfest";
+
+  Promise.all([
+      fetch('https://api.github.com/repos/qmk/qmk_firmware/issues?labels='+label+'&state=all', {headers: headers}),
+      fetch('https://api.github.com/repos/qmk/qmk_toolbox/issues?labels='+label+'&state=all', {headers: headers}),
+      fetch('https://api.github.com/repos/qmk/qmk_configurator/issues?labels='+label+'&state=all', {headers: headers})
+    ])
+    .then(repos => Promise.all(repos.map(repo => repo.json())))
+    .then(issues => {
+      issues = issues.flat();
+      return Promise.all([
+        checkComments(issues, username),
+        checkReviews(issues, username),
+        checkDocumentations(issues, username),
+        checkTranslations(issues, username)
+      ]);
+    }).then(results => {
+      results = arraysToObject(results);
+      // after all data is collected
+      console.log(results);
+      var total = results.comments.length + results.reviews.length + results.documentations.length + results.translations.length;
+      if (total >= 4) {
+        document.getElementById("eligibility").classList.add("completed");
+        document.getElementById("interaction-total").innerHTML = "✔";
+      } else {
+        document.getElementById("interaction-total").innerHTML = total + "/4";
+      }
+
+
+      document.getElementById("comment-list").innerHTML = results.comments.map(c => 
+        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        ).join(", ");
+      document.getElementById("review-list").innerHTML = results.reviews.map(c => 
+        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        ).join(", ");
+      document.getElementById("documentation-list").innerHTML = results.documentations.map(c => 
+        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        ).join(", ");
+      document.getElementById("translation-list").innerHTML = results.translations.map(c => 
+        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        ).join(", ");
+    });
+}
 
 
 </script>
