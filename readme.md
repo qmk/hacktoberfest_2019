@@ -33,7 +33,7 @@ Once you have donated or completed the requirements, click the link below to fil
 > *   Something that's clearly an attempt to simply +1 your PR count for October
 > *   Last but not least, one PR to fix a typo is fine. 5 PRs to remove a stray whitespace... not.
 
-[Claim your QMK t-shirt](/)
+## [Claim your QMK t-shirt](https://docs.google.com/forms/d/e/1FAIpQLSeFt0mmW2e8tFgTsGGlSUET_8dpGiyuOTZKyS5g2jcIM20d-Q/viewform)
 
 Be sure to check out all [the details on Hacktoberfest](https://hacktoberfest.digitalocean.com/), how you can find an event near you, and claim your reward offered by DigitalOcean and DEV.
 
