@@ -31,6 +31,7 @@
     <meta name="twitter:site" content="@qmk_firmware">
     <meta name="twitter:creator" content="@jackhumbert">
     <meta property="og:url" content="https://hacktoberfest.qmk.fm/">
+    <meta property="og:site_name" content="QMK Firmware">
     <meta property="og:title" content="Hacktoberfest with QMK!">
     <meta property="og:description" content="We're giving away goodies to people active in the QMK community - check out the requirements!">
     <meta property="og:image" content="https://hacktoberfest.qmk.fm/img/social.jpg">
@@ -42,11 +43,10 @@
         min-height: 100%;
       }
       body {
-        background: #152347;
         color: #99a1b3;
         font-family: Space Mono, monospace;
-        background-image: url("img/bg-left.png"),url("img/bg-right.png"),#152347;
-        background-position: top left,bottom right;
+        background: url("img/bg-left.png"), url("img/bg-right.png"), url("img/bg-left2.png"), url("img/bg-right2.png"), #152347;
+        background-position: 0% 0%, 100% 33%, 0% 70%, 100% 120%;
         background-repeat: no-repeat;
         font-size: 1.75rem;
         font-feature-settings: 'liga' 0;
@@ -58,16 +58,38 @@
       h3 { font-size: 1.75rem; }
       h4 { font-size: 1.50rem; }
 
-      h1, h2, h4 {
+      h1, h3, h4 {
         color: white;
       }
 
-      h3 {
+      h2, .yellow {
         color: #fff922;
       }
 
       a {
         color: #f0a;
+      }
+      
+      ul {
+          list-style: none;
+      }
+
+      ul li {
+        margin-left: 1.5em;
+      }
+
+      ul li::before {
+        content: "\2022"; 
+        color: #fff922;
+        font-weight: bold; 
+        display: inline-block;
+        width: 1.5em; 
+        margin-left: -1.5em; 
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin: 1.5rem 0 1.5rem 3rem;
+        font-size: 100%;
       }
 
       .main-logo {
@@ -245,23 +267,25 @@
 
       <h1>Hacktober&shy;fest<sup><small>®</small></sup> with QMK!</h1>
 
-      <p>In addition to participating in <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>, QMK is also celebrating its <em>4 year</em> anniversary<sup><a href="https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858">[1]</a></sup> this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets these requirements during the month of October.</p>
+      <p>In addition to participating in <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>, QMK is also celebrating its <span class="yellow">4 year anniversary</span><sup><a href="https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858">[1]</a></sup> this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets these requirements during the month of October.</p>
 
 
       <h2>How to qualify for a QMK t-shirt:</h2>
       <ul>
-        <li><a href="https://ckeys.org/donate/">Donate $15 to cKeys</a>, a 501(c)(3) non-profit that aims to connect and educate people interested in keyboards and technology</li>
+        <li><a href="https://ckeys.org/donate/">Donate $15 to cKeys</a>, a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology</li>
         <li><em>or</em> Interact with 4 <a href="https://github.com/qmk">QMK repos</a> in any of these ways:</li>
         <ul>
-          <li>Comment on an <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues">issue or PR in a significant way that's labelled <code>hacktoberfest</code></a></li>
-          <li>Review/suggest significant changes on a <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues">PR that's labelled <code>hacktoberfest</code></a></li>
-          <li>Open a PR that documents any new feature that's consistent with our doc style</li>
-          <li>Open a PR that translates part of the documentation or website</li>
+          <li>Review/suggest significant changes on a PR that's labelled <a href="https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+"><code>hacktoberfest</code></a></li>
+          <li>Make a comment on an Issue/PR that contributes to the conversation that's labelled <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues"><code>hacktoberfest</code></a></li>
+          <li>Open a PR that documents any new feature that's consistent with our doc style (check out the <a href='https://github.com/qmk/qmk_firmware/issues?q=label%3A"needs+doc"'><code>needs doc</code></a> label)</li>
+          <li>Open a PR that <a href="#translating">translates</a> some documentation</li>
+          <li>Open a PR that fixes a bug in an issue labelled <a href="https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues"><code>hacktoberfest</code></a>
         </ul>
         </li>
+        <li>We're open to ideas! Anything we determine to be a significant contribution to QMK (including any of the above actions that are large enough in size/scope) will qualify!</li>
       </ul>
 
-      <h3>Check to see if you've met the requirements:</h3>
+      <h3>Check to see how you're doing:</h3>
       <div class="row">
         <div class="columns six">
           <p id="username-box">
@@ -272,7 +296,7 @@
           <div id="eligibility">
             <div class="total">Interaction Total <div class="count" id="interaction-total"></div></div>
             <div class="types">
-              <div class="type" id="comments">Significant Comments
+              <div class="type" id="comments">Contributing Comments
                 <div class="count" id="comment-count"></div>
                 <div class="list" id="comment-list"></div>
               </div>
@@ -293,24 +317,45 @@
         </div>
       </div>
 
-      <p class="center">Once you have donated or completed the requirements, click the link below to fill out the form! We'll be validating all of the entries at the end of the month.</p>
+      <p>Once you have donated or completed the requirements, click the link below to fill out the form! <span class="yellow">Feel free to submit even if the tool above doesn't recongise your contributions</span> - we'll be validating all of the entries at the end of the month.</p>
+
+      <p><a href="https://hacktoberfest.digitalocean.com/details#quality-standards">DigitalOcean's quality standards for opening pull requests</a> should apply to the actions mentioned above:</p>
+      <blockquote>
+        <p>In line with Hacktoberfest value #2 (Quantity is fun, quality is key), here are examples of the PRs that we consider to be low-quality contributions (which we discourage).</p>
+        <ul>
+          <li>PRs that are automated (e.g. scripted opening PRs to remove whitespace/optimize images)</li>
+          <li>PRs that are disruptive (e.g. taking someone else's branch/commits and making a PR)</li>
+          <li>PRs that are regarded by a project maintainer as a hindrance vs. helping</li>
+          <li>Something that's clearly an attempt to simply +1 your PR count for October</li>
+          <li>Last but not least, one PR to fix a typo is fine. 5 PRs to remove a stray whitespace... not.</li>
+        </ul>
+      </blockquote>
+
       <p class="center"><a href="/" class="primary button center big">Claim your QMK t-shirt</a></p>
 
       <p>Be sure to check out all <a href="https://hacktoberfest.digitalocean.com/">the details on Hacktoberfest</a>, how you can find an event near you, and claim your reward offered by DigitalOcean and DEV.</p> 
 
-      <h4>This QMK event is graciously sponsored by the following vendors:</h4>
+      <h3>This QMK event is graciously sponsored by the following vendors:</h3>
+
+      <p><img src="img/sponsors.png" class="u-full-width" /></p>
 
       <p>Interested in sponsoring a dollar amount per shirt claimed? Reach out to us!</p>
 
-      <h3>F.A.Q.</h3>
+      <h2>F.A.Q.</h2>
 
-      <h4 id="code-reviews"><span>What's a code review?</span></h4>
+      <h3 id="what-is-qmk"><span>What is QMK?</span></h3>
+      <p>QMK is an open source software project that spans from the embedded firmware that runs on your keyboard to tools that help you compile it, and the software that helps put it on the device. Practically they're split into the <a href="https://github.com/qmk/qmk_firmware">firmware</a>, the <a href="https://github.com/qmk/qmk_configurator">configurator</a>, and the <a href="https://github.com/qmk/qmk_toolbox">toolbox</a>, and a several other repos. It started as Jack's personal fork of <a href="https://github.com/tmk/tmk_keyboard">Hasu's TMK Keyboard Firmware</a> with some small improvements simplifying the keymap, that's grown into the community-based project that it is today, run by a small team of collaborators.</p>
+
+      <h3 id="code-reviews"><span>What's a code review?</span></h3>
       <p>Good question! We're not sure yet.</p>
 
-      <h4 id="another-shirt"><span>Will I get this shirt instead of the regular Hacktoberfest shirt?</span></h4>
-      <p>This shirt give-away is sponsored by QMK itself and is totally separate from the one given out by DigitalOcean and DEV - you'll need to qualify and fill out the form for each give-away. Please note they have different qualifications.</p>
+      <h3 id="translating"><span>How should I translate things?</span></h3>
+      <p>Please have some technical knowledge of the language, and don't use Google translate. All PRs will be subject to review by native speakers if we can find them! Some good pages to start with are <a href="https://github.com/qmk/qmk_firmware/blob/master/docs/README.md">the main readme</a>, <a href="https://github.com/qmk/qmk_firmware/blob/master/docs/newbs.md">the newbs guide</a>, and <a href="https://github.com/qmk/qmk_configurator/tree/master/src/i18n">the configurator</a>. Any new translation should be put in a folder with the appropriate <a href="https://www.w3.org/International/articles/language-tags/">language tags</a>.</p>
 
-      <h4 id="who"><span>Who can participate?</span></h4>
+      <h3 id="another-shirt"><span>Will I get this shirt instead of the regular Hacktoberfest shirt?</span></h3>
+      <p>This give-away is totally separate from DigitalOcean and DEV - you'll need to qualify and fill out the form for each give-away. Please note they have different qualifications.</p>
+
+      <h3 id="who"><span>Who can participate?</span></h3>
       <p>Anyone with a <a href="https://github.com/">Github</a> account! </p>
 
       <footer>Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK and the vendors listed above.</footer>
