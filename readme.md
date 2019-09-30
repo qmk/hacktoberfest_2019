@@ -9,7 +9,7 @@ How to qualify for a QMK t-shirt:
 ---------------------------------
 
 *   [Donate $15 to cKeys](https://ckeys.org/donate/), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology
-*   _or_ Interact with 4 [QMK repos](https://github.com/qmk) in any of these ways:
+*   _or_ Interact 4 times with a [QMK repo](https://github.com/qmk) in any of these ways:
 
     *   Review/suggest significant changes on a PR that's labelled [`hacktoberfest`](https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+)
     *   Make a comment on an Issue/PR that contributes to the conversation that's labelled [`hacktoberfest`](https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues)
@@ -23,7 +23,7 @@ How to qualify for a QMK t-shirt:
 
 Once you have donated or completed the requirements, click the link below to fill out the form! Feel free to submit even if the tool above doesn't recongise your contributions - we'll be validating all of the entries at the end of the month.
 
-[DigitalOcean's quality standards for opening pull requests](https://hacktoberfest.digitalocean.com/details#quality-standards) should apply to the actions mentioned above:
+[Hacktoberfest's quality standards for opening pull requests](https://hacktoberfest.digitalocean.com/details#quality-standards) should apply to the actions mentioned above:
 
 > In line with Hacktoberfest value #2 (Quantity is fun, quality is key), here are examples of the PRs that we consider to be low-quality contributions (which we discourage).
 > 
@@ -50,9 +50,21 @@ F.A.Q.
 
 QMK is an open source software project that spans from the embedded firmware that runs on your keyboard to tools that help you compile it, and the software that helps put it on the device. Practically they're split into the [firmware](https://github.com/qmk/qmk_firmware), the [configurator](https://github.com/qmk/qmk_configurator), and the [toolbox](https://github.com/qmk/qmk_toolbox), and a several other repos. It started as Jack's personal fork of [Hasu's TMK Keyboard Firmware](https://github.com/tmk/tmk_keyboard) with some small improvements simplifying the keymap, that's grown into the community-based project that it is today, run by a small team of collaborators.
 
-### What's a code review?
+### Who can participate?
 
-Good question! We're not sure yet.
+Anyone, worldwide, with a [Github](https://github.com/) account!
+
+### How do I make comments on a PR?
+
+You can contribute to a conversation on a pull request by making a comment on the PR itself, or specific lines of code. [Github has more details on this in the docs](https://help.github.com/en/articles/commenting-on-a-pull-request#about-pull-request-comments). You can also tag people by their usernames with `@`, and insert code blocks for examples here as well.
+
+### How do I review a PR?
+
+Github allows anyone to review pull requests by making comments, suggesting changes, or generally approving the PR. [There are more details on how each of these are done in Github's help docs](https://help.github.com/en/articles/reviewing-proposed-changes-in-a-pull-request).
+
+### I want to contribute, but I think I'm stuck
+
+Fear not! [We have a very active Discord](https://discord.gg/fBGYurv) that you can hop in to ask for help, help others, or just chat about keyboards!
 
 ### How should I translate things?
 
@@ -61,9 +73,5 @@ Please have some technical knowledge of the language, and don't use Google trans
 ### Will I get this shirt instead of the regular Hacktoberfest shirt?
 
 This give-away is totally separate from DigitalOcean and DEV - you'll need to qualify and fill out the form for each give-away. Please note they have different qualifications.
-
-### Who can participate?
-
-Anyone with a [Github](https://github.com/) account!
 
 Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK and the vendors listed above.
