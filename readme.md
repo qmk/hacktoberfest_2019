@@ -1,6 +1,4 @@
-![](img/logo.png)
-
-![](img/attribution.png)
+![](img/header.jpg)
 
 Hacktober­fest® with QMK!
 =========================
@@ -41,7 +39,7 @@ Be sure to check out all [the details on Hacktoberfest](https://hacktoberfest.di
 
 ### This QMK event is graciously sponsored by the following vendors:
 
-![](img/sponsors.png)
+![](img/sponsors.jpg)
 
 Interested in sponsoring a dollar amount per shirt claimed? Reach out to us!
 
