@@ -74,4 +74,8 @@ Please have some technical knowledge of the language, and don't use Google trans
 
 This give-away is totally separate from DigitalOcean and DEV - you'll need to qualify and fill out the form for each give-away. Please note they have different qualifications.
 
+### When will I get the shirt?
+
+We'll be validating all of the entries in early November, then ordering the shirts, and shipping them out in November/December - when filling out the form, please account for this, and transit time based on your location. Shirts will be shipped from Indiana, USA.
+
 Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK and the vendors listed above.
