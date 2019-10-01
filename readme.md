@@ -37,7 +37,7 @@ Once you have donated or completed the requirements, click the link below to fil
 
 Be sure to check out all [the details on Hacktoberfest](https://hacktoberfest.digitalocean.com/), how you can find an event near you, and claim your reward offered by DigitalOcean and DEV.
 
-### This QMK event is graciously sponsored by the following vendors:
+### This QMK giveaway is graciously sponsored by the following vendors:
 
 ![](img/sponsors.jpg)
 
@@ -72,10 +72,10 @@ Please have some technical knowledge of the language, and don't use Google trans
 
 ### Will I get this shirt instead of the regular Hacktoberfest shirt?
 
-This give-away is totally separate from DigitalOcean and DEV - you'll need to qualify and fill out the form for each give-away. Please note they have different qualifications.
+This giveaway is totally separate from DigitalOcean and DEV - you'll need to qualify and fill out the form for each giveaway. Please note they have different qualifications.
 
 ### When will I get the shirt?
 
 We'll be validating all of the entries in early November, then ordering the shirts, and shipping them out in November/December - when filling out the form, please account for this, and transit time based on your location. Shirts will be shipped from Indiana, USA.
 
-Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific give-away is sponsored by QMK and the vendors listed above.
+Hacktoberfest® is a registered trademark of DigitalOcean, and presented by DigitalOcean and DEV. This QMK-specific giveaway is sponsored by QMK and the vendors listed above.
