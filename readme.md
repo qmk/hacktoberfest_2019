@@ -8,7 +8,7 @@ In addition to participating in [Hacktoberfest](https://hacktoberfest.digitaloce
 How to qualify for a QMK t-shirt:
 ---------------------------------
 
-*   [Donate $15 to cKeys](https://ckeys.org/donate/), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology
+*   [Donate $15 to cKeys](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8UQUNVFE9H6QY&source=hacktoberfest), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology - [You can find out more about them here](https://ckeys.org/)
 *   _or_ Interact 4 times with a [QMK repo](https://github.com/qmk) in any of these ways:
 
     *   Review/suggest significant changes on a PR that's labelled [`hacktoberfest`](https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+)
@@ -18,6 +18,8 @@ How to qualify for a QMK t-shirt:
     *   Open a PR that fixes a bug in an issue labelled [`hacktoberfest`](https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues)
 
 *   We're open to ideas! Anything we determine to be a significant contribution to QMK (including any of the above actions that are large enough in size/scope) will qualify!
+
+A bonus first-time open source contributor reward: if this is your first time submitting a PR to an open source project, mention `@c-keys` in your PR comments for a chance to win a [theDora QMK explorer keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ckeys/thedora) from cKeys (USA only - sorry!).
 
 ### [Check to see how you're doing with the tool on the website](https://hacktoberfest.qmk.fm)
 
@@ -68,7 +70,7 @@ Fear not! [We have a very active Discord](https://discord.gg/fBGYurv) that you c
 
 ### How should I translate things?
 
-Please have some technical knowledge of the language, and don't use Google translate. All PRs will be subject to review by native speakers if we can find them! Some good pages to start with are [the main readme](https://github.com/qmk/qmk_firmware/blob/master/docs/README.md), [the newbs guide](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs.md), and [the configurator](https://github.com/qmk/qmk_configurator/tree/master/src/i18n). Any new translation should be put in a folder with the appropriate [language tags](https://www.w3.org/International/articles/language-tags/).
+Please have some technical knowledge of the language, and don't use Google translate. All PRs will be subject to review by native speakers if we can find them! [Check out the page on how to add translations to the QMK docs](https://docs.qmk.fm/#/translating). Some good pages to start with are [the main readme](https://github.com/qmk/qmk_firmware/blob/master/docs/README.md), [the newbs guide](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs.md), and [the configurator](https://github.com/qmk/qmk_configurator/tree/master/src/i18n).
 
 ### Will I get this shirt instead of the regular Hacktoberfest shirt?
 
