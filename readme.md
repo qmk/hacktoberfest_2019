@@ -3,12 +3,12 @@
 Hacktober­fest® with QMK!
 =========================
 
-In addition to participating in [Hacktoberfest](https://hacktoberfest.digitalocean.com/), QMK is also celebrating its 4 year anniversary[\[1\]](https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858) this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets these requirements during the month of October.
+In addition to participating in [Hacktoberfest](https://hacktoberfest.digitalocean.com/), QMK is also celebrating its 4 year anniversary[\[1\]](https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858) this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets one of these requirements during the month of October.
 
 How to qualify for a QMK t-shirt:
 ---------------------------------
 
-*   [Donate $15 to cKeys](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8UQUNVFE9H6QY&source=hacktoberfest), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology - [You can find out more about them here](https://ckeys.org/)
+*   [Donate $15 to cKeys](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8UQUNVFE9H6QY&source=hacktoberfest), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology - [you can find out more about them here](https://ckeys.org/)
 *   _or_ Interact 4 times with a [QMK repo](https://github.com/qmk) in any of these ways:
 
     *   Review/suggest significant changes on a PR that's labelled [`hacktoberfest`](https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+)
