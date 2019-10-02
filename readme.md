@@ -70,7 +70,7 @@ Fear not! [We have a very active Discord](https://discord.gg/fBGYurv) that you c
 
 ### How should I translate things?
 
-Please have some technical knowledge of the language, and don't use Google translate. All PRs will be subject to review by native speakers if we can find them! [Check out the page on how to add translations to the QMK docs](https://docs.qmk.fm/#/translating). Some good pages to start with are [the main readme](https://github.com/qmk/qmk_firmware/blob/master/docs/README.md), [the newbs guide](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs.md), and [the configurator](https://github.com/qmk/qmk_configurator/tree/master/src/i18n).
+Please have some technical knowledge of the language, and don't use Google translate. All PRs will be subject to review by native speakers if we can find them! [Check out the page on how to add translations to the QMK docs](https://docs.qmk.fm/#/translating). Some good pages to start with are [the main readme](https://github.com/qmk/qmk_firmware/blob/master/docs/README.md), [the newbs guide](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs.md), [the configurator](https://github.com/qmk/qmk_configurator/tree/master/src/i18n), and [the qmk.fm website](https://github.com/qmk/qmk.fm/blob/gh-pages/readme.md).
 
 ### Will I get this shirt instead of the regular Hacktoberfest shirt?
 
