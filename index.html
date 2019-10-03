@@ -468,7 +468,8 @@ function check() {
   Promise.all([
       fetch('https://api.github.com/repos/qmk/qmk_firmware/issues?labels='+label+'&state=all', {headers: headers}),
       fetch('https://api.github.com/repos/qmk/qmk_toolbox/issues?labels='+label+'&state=all', {headers: headers}),
-      fetch('https://api.github.com/repos/qmk/qmk_configurator/issues?labels='+label+'&state=all', {headers: headers})
+      fetch('https://api.github.com/repos/qmk/qmk_configurator/issues?labels='+label+'&state=all', {headers: headers}),
+      fetch('https://api.github.com/repos/qmk/qmk.fm/issues?labels='+label+'&state=all', {headers: headers})
     ])
     .then(repos => Promise.all(repos.map(repo => repo.json())))
     .then(issues => {
@@ -499,10 +500,10 @@ function check() {
         `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
         ).join(", ");
       document.getElementById("documentation-list").innerHTML = results.documentations.map(c => 
-        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        `<a href="${c.html_url}">#${c.html_url.match(/[0-9]+/)}</a>`
         ).join(", ");
       document.getElementById("translation-list").innerHTML = results.translations.map(c => 
-        `<a href="${c.html_url}">#${c.issue_url.match(/[0-9]+/)}</a>`
+        `<a href="${c.html_url}">#${c.html_url.match(/[0-9]+/)}</a>`
         ).join(", ");
     });
 }
