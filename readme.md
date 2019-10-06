@@ -23,7 +23,7 @@ A bonus first-time open source contributor reward: if this is your first time su
 
 ### [Check to see how you're doing with the tool on the website](https://hacktoberfest.qmk.fm)
 
-Once you have donated or completed the requirements, click the link below to fill out the form! Feel free to submit even if the tool above doesn't recongise your contributions - we'll be validating all of the entries at the end of the month.
+Once you have donated or completed the requirements, click the link below to fill out the form! Feel free to submit even if the tool above doesn't recognize your contributions - we'll be validating all of the entries at the end of the month.
 
 [Hacktoberfest's quality standards for opening pull requests](https://hacktoberfest.digitalocean.com/details#quality-standards) should apply to the actions mentioned above:
 
