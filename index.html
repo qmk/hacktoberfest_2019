@@ -319,7 +319,7 @@
         </div>
       </div>
 
-      <p>Once you have donated or completed the requirements, click the link below to fill out the form! <span class="yellow">Feel free to submit even if the tool above doesn't recongise your contributions</span> - we'll be validating all of the entries at the end of the month.</p>
+      <p>Once you have donated or completed the requirements, click the link below to fill out the form! <span class="yellow">Feel free to submit even if the tool above doesn't recognise your contributions</span> - we'll be validating all of the entries at the end of the month.</p>
 
       <p><a href="https://hacktoberfest.digitalocean.com/details#quality-standards">Hacktoberfest's quality standards for opening pull requests</a> should apply to the actions mentioned above:</p>
       <blockquote>
@@ -396,10 +396,10 @@ function init() {
 function checkComments(issues, username) {
   return Promise.all(issues.map(issue => fetch(issue.comments_url, {headers: headers}))).then(responses =>
         Promise.all(responses.map(res => res.json()))
-  ).then(issues => {
-    issues.forEach(issue => {
+  ).then(issue_comments => {
+    issue_comments.forEach(issue => {
       var comment = issue.find(comment => { return (username.toLowerCase() == comment.user.login.toLowerCase()); });
-      if (comment) {
+      if (comment && (issues.find(issue => { return (issue.url == comment.issue_url) }).user.login.toLowerCase() != username.toLowerCase())) {
         comments.push(comment);
       }
     });
@@ -430,7 +430,7 @@ function checkReviews(issues, username) {
 function checkDocumentations(issues, username) {
   return new Promise(function(resolve, reject) {
     issues.forEach(issue => {
-      if (username.toLowerCase() == issue.user.login.toLowerCase() && issue.labels.find(label => label.name == "documentation"))
+      if (username.toLowerCase() == issue.user.login.toLowerCase() && issue.labels.find(label => label.name == "documentation") && !issue.labels.find(label => label.name == "translation"))
         documentations.push(issue);
     });
     resolve();
