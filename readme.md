@@ -43,7 +43,7 @@ Be sure to check out all [the details on Hacktoberfest](https://hacktoberfest.di
 
 ![](img/sponsors.jpg)
 
-Interested in sponsoring a dollar amount per shirt claimed? Reach out to us!
+Interested in sponsoring a dollar amount per shirt claimed? Reach out to us at the following link: https://qmk.fm/
 
 F.A.Q.
 ------
