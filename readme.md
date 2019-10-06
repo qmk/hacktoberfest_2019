@@ -23,7 +23,7 @@ A bonus first-time open source contributor reward: if this is your first time su
 
 ### [Check to see how you're doing with the tool on the website](https://hacktoberfest.qmk.fm)
 
-Once you have donated or completed the requirements, click the link below to fill out the form! Feel free to submit even if the tool above doesn't recongise your contributions - we'll be validating all of the entries at the end of the month.
+Once you have donated or completed the requirements, click the link below to fill out the form! Feel free to submit even if the tool above doesn't recognise your contributions - we'll be validating all of the entries at the end of the month.
 
 [Hacktoberfest's quality standards for opening pull requests](https://hacktoberfest.digitalocean.com/details#quality-standards) should apply to the actions mentioned above:
 
@@ -50,7 +50,7 @@ F.A.Q.
 
 ### What is QMK?
 
-QMK is an open source software project that spans from the embedded firmware that runs on your keyboard to tools that help you compile it, and the software that helps put it on the device. Practically they're split into the [firmware](https://github.com/qmk/qmk_firmware), the [configurator](https://github.com/qmk/qmk_configurator), and the [toolbox](https://github.com/qmk/qmk_toolbox), and a several other repos. It started as Jack's personal fork of [Hasu's TMK Keyboard Firmware](https://github.com/tmk/tmk_keyboard) with some small improvements simplifying the keymap, that's grown into the community-based project that it is today, run by a small team of collaborators.
+QMK is an open source software project that spans from the embedded firmware that runs on your keyboard to the tools that help you compile it, and the software that helps put it on the device. Practically they're split into the [firmware](https://github.com/qmk/qmk_firmware), the [configurator](https://github.com/qmk/qmk_configurator), and the [toolbox](https://github.com/qmk/qmk_toolbox), and a several other repos. It started as Jack's personal fork of [Hasu's TMK Keyboard Firmware](https://github.com/tmk/tmk_keyboard) with some small improvements simplifying the keymap, that's grown into the community-based project that it is today, run by a small team of collaborators.
 
 ### Who can participate?
 
