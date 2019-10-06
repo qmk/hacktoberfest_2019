@@ -3,7 +3,7 @@
 Hacktober­fest® with QMK!
 =========================
 
-In addition to participating in [Hacktoberfest](https://hacktoberfest.digitalocean.com/), QMK is also celebrating its 4 year anniversary[\[1\]](https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858) this month and giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets one of these requirements during the month of October.
+In addition to participating in [Hacktoberfest](https://hacktoberfest.digitalocean.com/), QMK is also celebrating its 4 year anniversary[\[1\]](https://github.com/qmk/qmk_firmware/commit/abc1c0e31e880861cf82e674bb4ffce9f4e13858) this month and we are giving away a QMK-specific Hacktoberfest t-shirt to anyone that meets one of these requirements during the month of October.
 
 How to qualify for a QMK t-shirt:
 ---------------------------------
@@ -11,7 +11,7 @@ How to qualify for a QMK t-shirt:
 *   [Donate $15 to cKeys](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8UQUNVFE9H6QY&source=hacktoberfest), a 501(c)(3) non-profit that connects and educates people interested in keyboards and technology - [you can find out more about them here](https://ckeys.org/)
 *   _or_ Interact 4 times with a [QMK repo](https://github.com/qmk) in any of these ways:
 
-    *   Review/suggest significant changes on a PR that's labelled [`hacktoberfest`](https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+)
+    *   Review/suggest significant changes on a PR labelled [`hacktoberfest`](https://github.com/qmk/qmk_firmware/pulls?utf8=✓&q=is%3Apr+is%3Aopen+label%3Ahacktoberfest+)
     *   Make a comment on an Issue/PR that contributes to the conversation that's labelled [`hacktoberfest`](https://github.com/search?q=org%3Aqmk+label%3Ahacktoberfest&type=Issues)
     *   Open a PR that documents any new feature that's consistent with our doc style (check out the [`needs doc`](https://github.com/qmk/qmk_firmware/issues?q=label%3A"needs+doc") label)
     *   Open a PR that [translates](#translating) some documentation
@@ -31,7 +31,7 @@ Once you have donated or completed the requirements, click the link below to fil
 > 
 > *   PRs that are automated (e.g. scripted opening PRs to remove whitespace/optimize images)
 > *   PRs that are disruptive (e.g. taking someone else's branch/commits and making a PR)
-> *   PRs that are regarded by a project maintainer as a hindrance vs. helping
+> *   PRs that are regarded by a project maintainer as a hindrance, rather than helping
 > *   Something that's clearly an attempt to simply +1 your PR count for October
 > *   Last but not least, one PR to fix a typo is fine. 5 PRs to remove a stray whitespace... not.
 
