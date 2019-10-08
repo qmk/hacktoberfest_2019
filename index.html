@@ -397,10 +397,15 @@ function checkComments(issues, username) {
   return Promise.all(issues.map(issue => fetch(issue.comments_url, {headers: headers}))).then(responses =>
         Promise.all(responses.map(res => res.json()))
   ).then(issue_comments => {
-    issue_comments.forEach(issue => {
-      var comment = issue.find(comment => { return (username.toLowerCase() == comment.user.login.toLowerCase()); });
-      if (comment && (issues.find(issue => { return (issue.url == comment.issue_url) }).user.login.toLowerCase() != username.toLowerCase())) {
-        comments.push(comment);
+    issue_comments.forEach(issue_comment => {
+      var comment = issue_comment.find(comment => { return (username.toLowerCase() == comment.user.login.toLowerCase()); });
+      if (comment) {
+        var issue = issues.find(issue => { return (issue.url == comment.issue_url) });
+        if (issue.user.login.toLowerCase() != username.toLowerCase() && (!issue.closed_at ^ (comment.created_at < issue.closed_at))) {
+          console.log("Comment on issue:");
+          console.log(issue);
+          comments.push(comment);
+        }
       }
     });
     document.getElementById("comment-count").innerHTML = comments.length;
